@@ -11,3 +11,5 @@ v0.3: starting a script in a file with executeScript (not a content script)
 v0.4: attempted to use the "tabs" API within a content script, which is not possible
 
 v0.5: sending a message from an anonymous script
+
+v0.6: attemting to execute script from anonymous script
