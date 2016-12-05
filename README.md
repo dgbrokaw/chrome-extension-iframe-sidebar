@@ -13,3 +13,5 @@ v0.4: attempted to use the "tabs" API within a content script, which is not poss
 v0.5: sending a message from an anonymous script
 
 v0.6: attemting to execute script from anonymous script
+
+v0.7: loading libraries as content scripts with executeScript
