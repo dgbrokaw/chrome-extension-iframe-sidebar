@@ -8,3 +8,4 @@ v0.2: simple code running from within content script
 
 v0.3: starting a script in a file with executeScript (not a content script)
 
+v0.4: attempted to use the "tabs" API within a content script, which is not possible
