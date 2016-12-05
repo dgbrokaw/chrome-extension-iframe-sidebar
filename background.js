@@ -1,3 +1,3 @@
 chrome.browserAction.onClicked.addListener(function(tab) {
-	chrome.tabs.executeScript({file: "script.js"});
+	chrome.tabs.executeScript({file: "libs/gmath/gmath.min.js"});
 });
