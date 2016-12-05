@@ -1,3 +1,1 @@
-chrome.runtime.sendMessage({greeting: "hello"}, function(response) {
-  console.log(response.farewell);
-});
+chrome.tabs.executeScript({code: "var div = document.createElement('div'); div.innerHTML = 'hiii'; document.body.appendChild(div);"});
