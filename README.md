@@ -6,4 +6,5 @@ v0.1: 3 variations of executing simple code from a persistant background script 
 
 v0.2: simple code running from within content script
 
+v0.3: starting a script in a file with executeScript (not a content script)
 
