@@ -1,6 +1,6 @@
-var sidebarOpen = false;
-insertSidebarFrame();
-d3.select('#myFrame').node();
+// insertSidebarFrame();
+insertIFrame();
+document.querySelector("#myFrame");
 
 function insertSidebarFrame() {
 	var sidebar = document.createElement('div');
@@ -24,16 +24,23 @@ function insertSidebarFrame() {
 		height:100%;\
 	";
 	innerFrame.src = chrome.extension.getURL("sidebar.html");
-	innerFrame.onload = hiii;
 	sidebar.appendChild(innerFrame);
 
 	document.body.appendChild(sidebar);
-	console.log('appended', Date.now());
-	sidebarOpen = true;
 
 	return innerFrame;
 }
 
-function hiii() {
-	console.log('onload fired', Date.now())
+function insertIFrame() {
+	var myFrame = document.createElement('iframe');
+	myFrame.id = "myFrame";
+	myFrame.style.cssText = "\
+		border:none;\
+		width:100%;\
+		height:100%;\
+	";
+	myFrame.src = chrome.extension.getURL("sidebar.html");
+	document.body.appendChild(myFrame);
+
+	return myFrame;
 }
