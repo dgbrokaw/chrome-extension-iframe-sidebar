@@ -1,11 +1,15 @@
 chrome.browserAction.onClicked.addListener(function(tab) {
-	chrome.tabs.executeScript({file: "insert-sidebar-frame.js"}, function(iframes) {
-		console.log('execute script callback arg:', iframes);
-		chrome.webNavigation.getAllFrames({tabId: tab.id}, function(args) {
-			console.log(tab.id, Date.now(), args);
-		});
-	});
+	chrome.tabs.executeScript({file: "insert-sidebar-frame.js"});
 });
+
+// chrome.browserAction.onClicked.addListener(function(tab) {
+// 	chrome.tabs.executeScript({file: "insert-sidebar-frame.js"}, function(iframes) {
+// 		console.log('execute script callback arg:', iframes);
+// 		chrome.webNavigation.getAllFrames({tabId: tab.id}, function(args) {
+// 			console.log(tab.id, Date.now(), args);
+// 		});
+// 	});
+// });
 
 // The number of known frames is the same whether our own iframe is appended or not.
 // chrome.browserAction.onClicked.addListener(function(tab) {

@@ -14,7 +14,10 @@
 	},
 
 	"web_accessible_resources": [
-		"sidebar.html"
+		"libs/jquery/jquery-3.1.0.min.js"
+	, "libs/bootstrap/js/bootstrap.min.js"
+	,	"sidebar.html"
+	, "iframe.js"
 	],
 
 	"permissions": [
